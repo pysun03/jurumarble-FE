@@ -11,13 +11,14 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    width: 100vw;
     font-size: 30px;
     font-weight: bold;
   }
 
 .container{
-    width: 1000px;
-    height: 550px;
+    width: 80%;
+    height: 80%;
     margin: auto;
     border: 4px solid black;
     border-radius: 40px;
@@ -29,38 +30,44 @@ body {
 img{
     width: 60px;
     height: 60px;
+    display: flex;
+    align-items: center;
 }
 .배경음악{
     border: 2px solid black;
-    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
 }
 .효과음{
     border: 2px solid black;
-    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
 }
 .box{
-    width: 100%;    
+    width: 100%;
+    height: 80%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20%;
 }
 #grid1{
     display: grid;
-    grid-template-columns: 154px 60px 500px;
-    gap: 50px;
-    margin-left: 60px;
-    margin-bottom: 100px;
+    grid-template-columns: 0.8fr 0.3fr 2.8fr;
+    gap: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    align-items: center;
 }
 #grid2{
     display: grid;
-    grid-template-columns: 154px 60px 500px;
-    gap: 50px;
-    margin-left: 60px;
+    grid-template-columns: 0.8fr 0.3fr 2.8fr;
+    gap: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    align-items: center;
 
 }
 button{
@@ -75,6 +82,21 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 65px;
-    font-weight: 50px;
 }
+
+@media all and (max-width:1023px){
+    body{font-size: 20px;}
+    img{width: 40px; height: 40px;}
+    button{width: 40px; height: 40px; border: 3px solid black;}
+    .container{border: 3px solid black;}
+}
+
+@media all and (max-width:767px){
+    body{font-size: 12px;}
+    img{width:30px; height: 30px;}
+    button{width:30px; height: 30px; border: 2px solid black;}
+    .배경음악, .효과음{border: 1px solid black;}
+    .container{border: 2px solid black;}
+}
+
+
