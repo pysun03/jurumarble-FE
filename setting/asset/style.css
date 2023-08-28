@@ -53,22 +53,13 @@ img{
     justify-content: center;
     gap: 20%;
 }
-#grid1{
+.grid{
     display: grid;
     grid-template-columns: 0.8fr 0.3fr 2.8fr;
     gap: 6%;
     margin-left: 8%;
     margin-right: 8%;
     align-items: center;
-}
-#grid2{
-    display: grid;
-    grid-template-columns: 0.8fr 0.3fr 2.8fr;
-    gap: 6%;
-    margin-left: 8%;
-    margin-right: 8%;
-    align-items: center;
-
 }
 button{
     border: 4px solid black;
@@ -83,6 +74,9 @@ button{
     align-items: center;
     justify-content: center;
 }
+button:hover{
+    cursor:pointer;
+}
 
 @media all and (max-width:1023px){
     body{font-size: 20px;}
@@ -92,11 +86,23 @@ button{
 }
 
 @media all and (max-width:767px){
-    body{font-size: 12px;}
+    body{font-size: 17px;}
     img{width:30px; height: 30px;}
     button{width:30px; height: 30px; border: 2px solid black;}
     .배경음악, .효과음{border: 1px solid black;}
     .container{border: 2px solid black;}
+}
+@media all and (max-width:540px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #backgroundMusic{
+        grid-column: -3/-1;
+    }
+    #soundEffects{
+        grid-column: -3/-1;
+    }
 }
 
 
