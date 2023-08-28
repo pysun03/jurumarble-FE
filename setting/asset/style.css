@@ -1,57 +1,42 @@
-/* styles.css */
-@font-face {
-    font-family: 'NanumBarunpen';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-family: 'NanumBarunpen', sans-serif;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    width: 100vw;
-    font-size: 30px;
-    font-weight: bold;
-  }
+  font-family: "NanumBarunpen", sans-serif;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-size: 30px;
+  font-weight: bold;
+}
 
-.container{
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    border: 4px solid black;
-    border-radius: 40px;
-    background-color: #FFFBE4;
-    display: flex;
-    align-items: center;
-    position: relative;
+.container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 4px solid black;
+  border-radius: 40px;
+  background-color: #fffbe4;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-img{
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
+img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
-.배경음악{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.배경음악 {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.효과음{
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box{
-    width: 100%;
-    height: 80%;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20%;
+.효과음 {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .grid{
     display: grid;
@@ -78,11 +63,22 @@ button:hover{
     cursor:pointer;
 }
 
-@media all and (max-width:1023px){
-    body{font-size: 20px;}
-    img{width: 40px; height: 40px;}
-    button{width: 40px; height: 40px; border: 3px solid black;}
-    .container{border: 3px solid black;}
+@media all and (max-width: 1023px) {
+  body {
+    font-size: 20px;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+  }
+  .container {
+    border: 3px solid black;
+  }
 }
 
 @media all and (max-width:767px){
@@ -104,5 +100,3 @@ button:hover{
         grid-column: -3/-1;
     }
 }
-
-
