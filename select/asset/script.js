@@ -1,4 +1,4 @@
-window.onload = () => howmany(6);
+window.onload = () => howmany(8);
 
 function howmany(n) {
   const container = document.querySelector(".container");
@@ -20,9 +20,10 @@ function howmany(n) {
     str += `
         <div class="user">
             <img src="./static/cap_${i}.png" />
-            <input type="text"/>
+            <input type="text" placeholder="플레이어명(팀명)"/>
         </div>
     `;
   }
-  container.innerHTML = str;
+  container.innerHTML =
+    str + `<button id="btn" onclick="seletcion()">설정</button>`;
 }
