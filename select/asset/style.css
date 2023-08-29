@@ -9,7 +9,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap:0px;
+  grid-row-gap: 0px;
   width: 1800px;
   height: 800px;
   margin: auto;
@@ -17,6 +17,8 @@ body {
   border-radius: 20px;
   position: relative;
   background-color: beige;
+  padding: 60px 0px;
+  box-sizing: border-box;
 }
 
 .user {
@@ -24,7 +26,7 @@ body {
   flex-direction: column;
   gap: 30px;
   padding-top: 35px;
-  height:200px;
+  height: 200px;
 }
 
 .user img {
@@ -48,5 +50,5 @@ button {
   background-color: blanchedalmond;
   position: absolute;
   left: 44%;
-  bottom: 80px;
+  bottom: -30px;
 }

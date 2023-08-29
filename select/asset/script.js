@@ -24,5 +24,6 @@ function howmany(n) {
         </div>
     `;
   }
-  container.innerHTML = str;
+  container.innerHTML =
+    str + `<button id="btn" onclick="seletcion()">설정</button>`;
 }
