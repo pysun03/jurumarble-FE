@@ -1,0 +1,72 @@
+{
+  "MAN": { "title": "남자 마시기", "desc": false },
+  "WOMAN": { "title": "여자 마시기", "desc": false },
+  "OPPOSITE": { "title": "맞은 편 마시기", "desc": false },
+  "ODD": { "title": "생일 홀수 마시기", "desc": false },
+  "EVEN": { "title": "생일 짝수 마시기", "desc": false },
+  "ALL": { "title": "다같이 마시기", "desc": false },
+  "EXCEPT": { "title": "나 빼고 다 마셔!", "desc": false },
+  "YOU": { "title": "나만 마시기", "desc": false },
+  "BOMB": { "title": "폭탄주", "desc": false },
+  "SELECT": { "title": "지목하는 사람 마시기", "desc": false },
+  "RANDOM": { "title": "랜덤 마시기", "desc": false },
+  "NOONCHI": { "title": "눈치 게임", "desc": false },
+  "IPHONE": { "title": "아이폰 마시기", "desc": false },
+  "GALAXY": { "title": "갤럭시 마시기", "desc": false },
+  "GOLDENKEY": { "title": "황금 열쇠", "desc": false },
+  "TWO_TOUCH": { "title": "투터치", "desc": false },
+  "REST": { "title": "다음 턴 쉬기", "desc": false },
+  "H2O": { "title": "물 마시기", "desc": false },
+  "ANJOO": { "title": "안주먹기", "desc": false },
+  "SEJONG": { "title": "훈민정음", "desc": false },
+  "NO_ANJOO": {
+    "title": "No 안주",
+    "desc": "(주사위 눈의 수)분 동안 안주를 먹을 수 없어요"
+  },
+  "AWESOME": {
+    "title": "훈남훈녀 마시기",
+    "desc": "자신이 훈남 훈녀라고 생각한다면 한 잔!"
+  },
+  "LOVE": { "title": "지목 러브샷", "desc": "❤️" },
+  "BANWORD": {
+    "title": "한 턴 금지어 게임",
+    "desc": "주사위가 한 바퀴를 돌 때까지 지정된 금지어를 말할 수 없어요"
+  },
+  "FRIENDSHIP": {
+    "title": "의리주",
+    "desc": "(인원수 × 1/3)병 마시기!"
+  },
+  "OME": {
+    "title": "애교하고 인정 받기",
+    "desc": "안 하면 '한 병', 노인정 '한 잔"
+  },
+  "ISLAND": { "title": "무인도", "desc": "열심히 마신 당신 떠나라" },
+  "START": { "title": "START", "desc": "아무것도 없는 그냥 시작 지점" },
+  "STACK_PUSH": {
+    "title": "축적주 누적",
+    "desc": "축적주가 한 병 1병 누적됐어요!"
+  },
+  "STACK_POP": { "title": "축적주 마시기", "desc": null },
+  "NORTHKOREA": { "title": "공산당", "desc": false },
+  "STAND": {
+    "title": "물병 세우기",
+    "desc": "돌아가며 물병 세우기를 합니다! 성공한 팀 빼고 다 마셔야 해요"
+  },
+  "007": { "title": "침묵 007", "desc": false },
+  "BACK3": { "title": "세 칸 뒤로", "desc": false },
+  "FORWARD3": { "title": "세 칸 앞으로", "desc": false },
+  "SINGASONG": { "title": "전국 노래자랑", "desc": false },
+  "GREENLIGHT": { "title": "이성 번호 따기", "desc": false },
+  "PEE": {
+    "title": "화장실 금지",
+    "desc": "10분 동안 화장실에 갈 수 없어요. 가려면 다녀온 후 한 잔 마셔야 해요!"
+  },
+  "CALLME": {
+    "title": "답장 게임",
+    "desc": "아무한테나 전화 걸고 바로 끊은 뒤, 가장 먼저 연락을 받은 팀을 제외하고 모두 한 잔씩 마셔야 해요"
+  },
+  "SENIOR": { "title": "1~6월 생일 마시기", "desc": false },
+  "JUNIOR": { "title": "7~12월 생일 마시기", "desc": false },
+  "BOTH": { "title": "양 옆 마시기", "desc": false },
+  "NULL": { "title": "쉬는 칸", "desc": false }
+}
