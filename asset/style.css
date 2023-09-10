@@ -1,34 +1,30 @@
-
 body {
   width: 100%;
   height: 100vh;
-  background-color:white;
+  background-color: white;
   margin: 0;
 }
 
 #grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr; 
+  grid-template-columns: 1fr 4fr 1fr;
 }
-
 
 #grid2 {
   display: grid;
-  grid-template-rows: 38vh 30vh 30vh; 
+  grid-template-rows: 38vh 30vh 30vh;
 }
-
 
 #title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'PyeongChangPeace-Bold', sans-serif;
+  font-family: "PyeongChangPeace-Bold", sans-serif;
   font-size: 160px;
   color: #f5f0bb;
   letter-spacing: 30px;
-  text-shadow: -6px 0px black, 0px 6px black, 6px 0px  black, 0px -6px black;
+  text-shadow: -6px 0px black, 0px 6px black, 6px 0px black, 0px -6px black;
 }
-
 
 #player-count {
   display: grid;
@@ -53,7 +49,7 @@ body {
   font-size: 90px;
   letter-spacing: 30px;
   border: none;
-  background-color:white;
+  background-color: white;
   color: black;
   border: 0.15vw solid black;
   border-radius: 0.21vw;
@@ -74,7 +70,11 @@ body {
   align-items: center;
 }
 
-#player-count button:first-child{
+#player-count button {
+  cursor: pointer;
+}
+
+#player-count button:first-child {
   margin-right: 40px;
 }
 #count {
@@ -83,25 +83,25 @@ body {
 
 #player-count button:last-child {
   margin-left: 40px;
-
 }
 
 button {
-  font-family: 'NanumBarunpen', sans-serif;
+  font-family: "NanumBarunpen", sans-serif;
 }
 
 span {
-  font-family: 'NanumBarunpen', sans-serif;
-  
+  font-family: "NanumBarunpen", sans-serif;
 }
 
-.image-container, .image-container2 {
+.image-container,
+.image-container2 {
   width: 23.7vw;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-.image-container img, .image-container2 img {
+.image-container img,
+.image-container2 img {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -110,63 +110,52 @@ span {
 .btn {
   font-size: 40px;
   background-color: white;
-  border:none;
+  border: none;
 }
 
 #settings-btn {
   position: absolute;
   top: 15px;
   right: 15px;
-  border:none;
+  border: none;
   background-color: white;
   cursor: pointer;
+  z-index: 3;
 }
-
-
-
-
-#settings-btn:hover {
-  background-color: #f4f4f4;
-}
-
 
 :root {
-  --color-hover: #f4f4f4;  
+  --color-hover: #f4f4f4;
 }
 
-
-#settings-btn, .start-btn {
-  cursor: pointer; 
-  transition: background-color 0.3s;  
-}
-
-#settings-btn:hover, .start-btn:hover {
-  background-color: var(--color-hover);  
-}
-@media all and (max-width: 1130px){
-  #title{
-    font-size: 130px;  
-  }
- .start-btn{
-   font-size:70px;
- }
-
-}
-@media all and (max-width: 920px){
-  #title{
-    font-size: 100px;
-
-  }
+#settings-btn,
 .start-btn {
-  font-size:50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.start-btn:hover {
+  background-color: var(--color-hover);
 }
-@media all and (max-width: 710px){
-  #title{
+@media all and (max-width: 1130px) {
+  #title {
+    font-size: 130px;
+  }
+  .start-btn {
     font-size: 70px;
   }
-
+}
+@media all and (max-width: 920px) {
+  #title {
+    font-size: 100px;
+  }
+  .start-btn {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 710px) {
+  #title {
+    font-size: 70px;
+  }
 }
 .container {
   width: 75px;
