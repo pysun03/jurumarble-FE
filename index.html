@@ -9,7 +9,11 @@
     <script src="asset/script.js"></script>
 </head>
 <body>
-    <button id="settings-btn">설정</button>
+    <button id="settings-btn" >
+    <div class='container'>
+        <img src="./static/설정아이콘.png" alt="설정아이콘">
+    </div>
+    </button>
     <div id="grid">
         <div class="image-container">
             <img src="./static/맥주.png" alt="맥주">
@@ -19,7 +23,7 @@
 
 
             <div id="player-count">
-                <div><span>인원수</span></div>
+                <div><span>인원 수</span></div>
                 <div>
                     <button class="btn" onclick="decrement()">-</button>
                     <span id="count">숫자</span>
