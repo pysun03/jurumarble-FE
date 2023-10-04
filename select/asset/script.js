@@ -17,7 +17,7 @@ function getCookie(cname) {
 document.addEventListener("DOMContentLoaded", function() {
   const savedCount = getCookie("userCount");
   if (savedCount !== "") {
-     window.onload = () => howmany(userCount);
+    howmany(userCount);
   }
 });
 
