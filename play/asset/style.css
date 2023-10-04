@@ -1,0 +1,34 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.map {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.map > div {
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.cell {
+  display: flex;
+  border: 1px solid black;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.cell span {
+  font-family: "NanumBarunpen";
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
