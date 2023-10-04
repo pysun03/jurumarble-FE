@@ -67,3 +67,13 @@ const resizing = () => {
     elem.style.height = `${cell_size}px`;
   }
 };
+
+function resizeModalToImage(img) {
+  const modal = document.querySelector(".modal");
+ 
+  const imgWidth = img.width;
+  const imgHeight = img.height;
+  
+  modal.style.width = `${imgWidth}px`;
+  modal.style.height = `${imgHeight}px`;
+}
