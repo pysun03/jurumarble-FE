@@ -1,26 +1,10 @@
-function getCookie(cname) {
-  const name = cname + "=";
-  const decodedCookie = decodeURIComponent(document.cookie);
-  const ca = decodedCookie.split(';');
-  for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) === ' ') {
-          c = c.substring(1);
-      }
-      if (c.indexOf(name) === 0) {
-          return c.substring(name.length, c.length);
-      }
+window.onload() = function(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const userCount = urlParams.get('userCount');
+if (userCount !== null && !isNaN(userCount)) {
+    howmany(userCount*1) } 
   }
-  return "";
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  const savedCount = getCookie("userCount");
-  if (savedCount !== "") {
-    howmany(userCount);
-  }
-});
-
 
 function howmany(n) {
   const container = document.querySelector(".container");
