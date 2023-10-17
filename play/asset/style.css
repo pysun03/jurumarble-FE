@@ -21,8 +21,8 @@ body {
 
 .cell {
   display: flex;
+  flex-direction: column;
   border: 1px solid black;
-  padding: 6px;
   box-sizing: border-box;
 }
 
@@ -31,59 +31,43 @@ body {
   font-size: 1rem;
   text-align: center;
   margin: auto;
+  padding: 6px;
 }
-<<<<<<< Updated upstream
-=======
+
+.cell[isCorner="false"]::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+}
 
 #cell_1 {
   background-color: #4f79ceaf;
 }
 
-#cell_2,
-#cell_3,
-#cell_4,
-#cell_5,
-#cell_6,
-#cell_7 {
-  border-top: 25px solid #acdfff6c;
+:is(#cell_2, #cell_3, #cell_4, #cell_5, #cell_6, #cell_7)::before {
+  background-color: #acdfff6c;
 }
+
 #cell_8 {
   background-color: #5ac0ff9a;
 }
 
-#cell_9,
-#cell_10,
-#cell_11,
-#cell_12,
-#cell_13,
-#cell_14 {
-  border-top: 25px solid #3098d9;
+:is(#cell_9, #cell_10, #cell_11, #cell_12, #cell_13, #cell_14)::before {
+  background-color: #3098d9;
 }
 
 #cell_15 {
   background-color: #9295df97;
 }
-#cell_16,
-#cell_17,
-#cell_18,
-#cell_19,
-#cell_20,
-#cell_21 {
-  border-top: 25px solid #a6a8d7;
+
+:is(#cell_16, #cell_17, #cell_18, #cell_19, #cell_20, #cell_21)::before {
+  background-color: #a6a8d7;
 }
 
 #cell_22 {
   background-color: #efbcd5b5;
 }
-#cell_23,
-#cell_24,
-#cell_25,
-#cell_26,
-#cell_27,
-#cell_28 {
-  border-top: 25px solid #f7b0d3;
+
+:is(#cell_23, #cell_24, #cell_25, #cell_26, #cell_27, #cell_28)::before {
+  background-color: #f7b0d3;
 }
-#cell_29 {
-  background-color: #4f79ceaf;
-}
->>>>>>> Stashed changes
