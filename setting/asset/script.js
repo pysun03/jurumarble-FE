@@ -50,8 +50,8 @@ function setVolumeCookie() {
     const soundEffectsVolume = soundEffects.value;
 
     // 쿠키 이름과 값 설정, ${backgroundMusicVolume}는 변수 backgroundMusicVolume의 값
-    document.cookie = `backgroundMusicVolume=${backgroundMusicVolume}`;
-    document.cookie = `soundEffectsVolume=${soundEffectsVolume}`;
+    document.cookie = `backgroundMusicVolume=${backgroundMusicVolume}; path=/;`
+    document.cookie = `soundEffectsVolume=${soundEffectsVolume}; path=/;`
 }
 
 function getCookie(cookieName) {
