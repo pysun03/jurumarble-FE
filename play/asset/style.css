@@ -1,16 +1,16 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    background-color: #EEEEEE;
-    grid-template-columns: 1fr 3fr 1fr;
-    position: relative;
-    font-family: "NanumBarunpen";
-  }
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-color: #eeeeee;
+  grid-template-columns: 1fr 3fr 1fr;
+  position: relative;
+  font-family: "NanumBarunpen";
+}
 
-button{
+button {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -18,12 +18,12 @@ button{
   padding: 0;
 }
 
-img{
+img {
   width: 50px;
   height: 50px;
 }
 
-.player{
+.player {
   background-color: white;
   height: 40px;
   width: 80%;
@@ -33,31 +33,31 @@ img{
   font-size: 12px;
 }
 
-.left{
+.left {
   display: flex;
   gap: 5%;
   flex-direction: column;
   padding: 25px 20px;
 }
 
-.logo{
+.logo {
   border-radius: 150%;
   background-color: white;
   width: 40px;
   height: 40px;
 }
 
-.players{
+.players {
   display: flex;
   gap: 5%;
   width: 100%;
 }
 
-button:hover{
-  cursor:pointer;
+button:hover {
+  cursor: pointer;
 }
 
-.right{
+.right {
   display: flex;
   gap: 5%;
   flex-direction: column;
@@ -65,13 +65,59 @@ button:hover{
   font-size: 15px;
 }
 
-.glass{
+.glass {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.glass img{
+.glass img {
   width: 20px;
   height: 20px;
+}
+
+.cell span {
+  font-family: "NanumBarunpen";
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+  padding: 6px;
+}
+
+.cell[isCorner="false"]::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+}
+
+#cell_1 {
+  background-color: #4f79ceaf;
+}
+
+:is(#cell_2, #cell_3, #cell_4, #cell_5, #cell_6, #cell_7)::before {
+  background-color: #acdfff6c;
+}
+
+#cell_8 {
+  background-color: #5ac0ff9a;
+}
+
+:is(#cell_9, #cell_10, #cell_11, #cell_12, #cell_13, #cell_14)::before {
+  background-color: #3098d9;
+}
+
+#cell_15 {
+  background-color: #9295df97;
+}
+
+:is(#cell_16, #cell_17, #cell_18, #cell_19, #cell_20, #cell_21)::before {
+  background-color: #a6a8d7;
+}
+
+#cell_22 {
+  background-color: #efbcd5b5;
+}
+
+:is(#cell_23, #cell_24, #cell_25, #cell_26, #cell_27, #cell_28)::before {
+  background-color: #f7b0d3;
 }
