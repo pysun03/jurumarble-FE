@@ -76,6 +76,26 @@ button:hover {
   height: 20px;
 }
 
+.map {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.map > div {
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
 .cell span {
   font-family: "NanumBarunpen";
   font-size: 1rem;
