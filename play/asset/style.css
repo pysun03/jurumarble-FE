@@ -1,138 +1,38 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    background-color: #EEEEEE;
-    grid-template-columns: 1fr 3fr 1fr;
-    position: relative;
-    font-family: "NanumBarunpen";
-  }
-
-button{
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  border: none;
-  padding: 0;
-<<<<<<< Updated upstream
-}
-
-img{
-  width: 50px;
-  height: 50px;
-}
-
-.player{
-  background-color: white;
-  height: 40px;
-  width: 80%;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 12px;
 }
 
-.left{
+.map {
+  margin: auto;
   display: flex;
-  gap: 5%;
   flex-direction: column;
-  padding: 25px 20px;
+  gap: 2px;
 }
 
-.logo{
-  border-radius: 150%;
-  background-color: white;
-  width: 40px;
-  height: 40px;
-}
-
-.players{
+.map > div {
   display: flex;
-  gap: 5%;
-  width: 100%;
+  gap: 2px;
+  justify-content: space-between;
 }
 
-button:hover{
-  cursor:pointer;
-}
-
-.right{
+.cell {
   display: flex;
-  gap: 5%;
-  flex-direction: column;
-  padding: 25px 20px;
-  font-size: 15px;
+  border: 1px solid black;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
-.glass{
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.cell span {
+  font-family: "NanumBarunpen";
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
 }
 
-.glass img{
-  width: 20px;
-  height: 20px;
-}
-=======
-}
-
-img{
-  width: 50px;
-  height: 50px;
-}
-
-.player{
-  background-color: white;
-  height: 40px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 12px;
-}
-
-.left{
-  display: flex;
-  gap: 5%;
-  flex-direction: column;
-  padding: 25px 20px;
-}
-
-.logo{
-  border-radius: 150%;
-  background-color: white;
-  width: 40px;
-  height: 40px;
-}
-
-.players{
-  display: flex;
-  gap: 5%;
-  width: 100%;
-}
-
-button:hover{
-  cursor:pointer;
-}
-
-.right{
-  display: flex;
-  gap: 5%;
-  flex-direction: column;
-  padding: 25px 20px;
-  font-size: 15px;
-}
-
-.glass{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-<<<<<<< HEAD
 .modal-background {
   position: fixed;
   top: 0;
@@ -175,10 +75,5 @@ button:hover{
   font-size: 2em; 
    
 }
-=======
-.glass img{
-  width: 20px;
-  height: 20px;
-}
->>>>>>> 44e91c0ae89a175418dd44d9aee28ef4ee29cff7
->>>>>>> Stashed changes
+
+
