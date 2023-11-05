@@ -85,7 +85,7 @@ body {
   margin-left: 40px;
 }
 
-button {
+button, input[type="submit"] {
   font-family: "NanumBarunpen", sans-serif;
 }
 
