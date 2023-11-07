@@ -41,6 +41,7 @@ const reading = () => {
     15, 16, 17, 18, 19, 20, 21, 22, 14, 23, 13, 24, 12, 25, 11, 26, 10, 27, 9,
     28, 8, 7, 6, 5, 4, 3, 2, 1,
   ];
+  const corner = [1, 8, 15, 22];
   let num = 0;
   const map = document.getElementsByClassName("map")[0];
   for (let i = 0; i < DEPTH; i++) {
@@ -49,6 +50,7 @@ const reading = () => {
       const cell = document.createElement("div");
       cell.classList = "cell";
       cell.id = `cell_${numArr[num]}`;
+      cell.setAttribute("isCorner", corner.includes(numArr[num]));
       const desc = document.createElement("span");
       desc.innerText = env.cellCode[cells[numArr[num] - 1]].title;
       cell.appendChild(desc);
