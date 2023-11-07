@@ -11,7 +11,10 @@
   </head>
   <body>
     <audio id="bg" autoplay loop>
-      <source src="setting/static/sound/background-music.mp3" type="audio/mpeg" />
+      <source
+        src="setting/static/sound/background-music.mp3"
+        type="audio/mpeg"
+      />
     </audio>
     <audio id="se" preload="auto">
       <source src="setting/static/sound/soundeffect.mp3" type="audio/mpeg" />
@@ -40,9 +43,12 @@
         </div>
 
         <div id="start-section">
-          <form action="select/index.html">
-            <input type="submit" class="start-btn" value="시작하기" />
-          </form>
+          <input
+            type="button"
+            class="start-btn"
+            value="시작하기"
+            onclick="start()"
+          />
         </div>
       </div>
       <div class="image-container2">
@@ -51,4 +57,3 @@
     </div>
   </body>
 </html>
-
