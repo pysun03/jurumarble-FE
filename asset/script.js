@@ -1,4 +1,4 @@
-let count = 1; 
+let count = 2; 
 
 function updateDisplay() {
     document.getElementById("count").textContent = count;
@@ -10,7 +10,7 @@ function increment() {
 }
 
 function decrement() {
-    if (count > 1) {
+    if (count > 2) {
         count--;
     }
     updateDisplay();
