@@ -1,4 +1,4 @@
-let count = 1; 
+let count = 2; 
 
 function updateDisplay() {
     document.getElementById("count").textContent = count;
