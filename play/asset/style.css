@@ -76,14 +76,14 @@ button:hover {
   font-size: 15px;
 }
 
-.glass {
+.accumulate {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 30px;
 }
 
-.glass img {
+.accumulate img {
   width: 30px;
   height: 30px;
 }
