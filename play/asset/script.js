@@ -73,7 +73,6 @@ const resizing = () => {
   for (let i = 0; i < corner.length; i++) {
     corner[i].style.width = `${cell_size}px`;
     corner[i].style.height = `${cell_size}px`;
-    corner[i].style.top = '50px';
   }
 };
 

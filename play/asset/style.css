@@ -185,14 +185,16 @@ button:hover {
 .add{
   position:absolute;
   left:0;
+  bottom:0;
 }
 
 .islandevent {
   position:absolute;
-  right:0px;
+  left:0px;
 }
 
 .start {
   position:absolute;
-  left:0;
+  right:0;
+  bottom:0;
 }
