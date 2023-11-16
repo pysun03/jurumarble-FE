@@ -89,7 +89,7 @@ button:hover {
 }
 
 .map {
-  position:relative;
+  position: relative;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -177,24 +177,22 @@ button:hover {
   top: -0%;
 }
 
-.oneshot {
-  position:absolute;
-  right:0px;
+.corner {
+  position: absolute;
 }
 
-.add{
-  position:absolute;
-  left:0;
-  bottom:0;
+.corner:is(:nth-child(1), :nth-child(2)) {
+  top: 0;
 }
 
-.islandevent {
-  position:absolute;
-  left:0px;
+.corner:is(:nth-child(3), :nth-child(4)) {
+  bottom: 0;
 }
 
-.start {
-  position:absolute;
-  right:0;
-  bottom:0;
+.corner:is(:nth-child(1), :nth-child(3)) {
+  left: 0;
+}
+
+.corner:is(:nth-child(2), :nth-child(4)) {
+  right: 0;
 }
