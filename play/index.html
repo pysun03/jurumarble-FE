@@ -1,51 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style.css" />
-    <link rel="stylesheet" href="/global/common.css" />
-    <script src="asset/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="left">
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player">player1</div>
-        </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player">player2</div>
-        </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player">player3</div>
-        </div>
-    </div>
-    <div class="map"></div>
-    <div class="right">
-        <div class="glass">
-            <img src="static/glass.svg"/>
-            <div>누적잔 수</div>
-        </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player"></div>
-        </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player"></div>
-        </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player"></div>
-        </div>
+<html lang="ko">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주루마블 게임</title>
+    <link rel="stylesheet" href="/global/common.css" />
+    <link rel="stylesheet" href="asset/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="asset/script.js" defer></script>
+</head>
+
+<body>
+    <section class="map"></section>
+    <div class="modal-background">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="./static/cap_9.png" class="modal-image" onload="resizeModalToImage(this)" alt="modal content">
+                <div class="modal-text">여기에 텍스트를 입력하세요</div>
+            </div>
+        </div>
     </div>
-    <button>
-        <img src="static/setting.png"/>
-    </button>
 </body>
+
 </html>
