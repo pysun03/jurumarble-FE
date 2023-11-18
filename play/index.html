@@ -32,29 +32,18 @@
         <img src="static/oneshot.png"  class="corner" />
         <img src="static/add.png"  class="corner"/>
         <img src="static/start.png"  class="corner"/>
+        <section class="counter"><img src="static/glass.svg"><span id="drink-counter">0잔 축적됨!</span></section>
+        <div class="cells"></div>
+        <button class="roll" id="rolldice">
+            <img src="static/dice.png"/><span>주사위 굴리기</span></button>
+        </div>
     </div>
     <div class="right">
-        <div class="accumulate">
-            <img src="static/glass.svg"/> 현재 <span id="drink-counter">0</span> 잔 축적됨!
-            
-            <script>
-                let n = 0;
-
-                const updateDrinkCounter = () => {
-                const drinkCounter = document.getElementById('drink-counter');
-                drinkCounter.textContent = n;
-                };
-
-            </script>
+        <div class = "explain">
+            <!-- 황금열쇠나 칸 설명 띄우는 공간-->
         </div>
-    <div class = "explain">
-        <!-- 황금열쇠나 칸 설명 띄우는 공간-->
     </div>
-    <button id="rolldice">
-        <img src="static/dice.png"/>주사위 굴리기</button>
-    </div>
-    </div>
-    <button>
+    <button class="setting">
         <img src="static/setting.png"/>
     </button>
     </div>
