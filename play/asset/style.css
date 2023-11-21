@@ -220,6 +220,7 @@ button:hover {
   height: 570px;
   background-color: transparent;
   perspective: 1000px;
+  top: calc(100vh + 50%);
 }
 
 .modal-inner {
