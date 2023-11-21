@@ -216,6 +216,7 @@ button:hover {
   height: 570px;
   background-color: transparent;
   perspective: 1000px;
+  top: calc(100vh + 50%);
 }
 
 .modal-inner {
@@ -280,4 +281,19 @@ button:hover {
   z-index: 3;
   color: black;
   font-size: 20px;
+}
+
+.dice-image {
+  display: none;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  left: calc(50vw - 100px);
+  top: calc(50vh - 100px);
+  margin: auto;
+  border-radius: 15px;
+}
+
+.dice-image[active] {
+  display: flex;
 }

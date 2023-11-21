@@ -76,3 +76,9 @@ const resizing = () => {
   }
 };
 
+const rollDice = () => {
+  const randomNumber = Math.floor(Math.random() * 6) + 1;
+  const image = document.getElementById("dice-image");
+  image.src = `static/dice${randomNumber}.png`;
+  image.setAttribute("active", "");
+};
