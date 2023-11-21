@@ -76,14 +76,9 @@ const resizing = () => {
   }
 };
 
-document.getElementById('rolldice').addEventListener('click', function() {
-  var randomNumber = Math.floor(Math.random() * 6) + 1; 
-
-  
-  for (var i = 1; i <= 6; i++) {
-      document.getElementById('dice' + i).style.display = 'none';
-  }
-
-  
-  document.getElementById('dice' + randomNumber).style.display = 'block';
-});
+const rollDice = () => {
+  const randomNumber = Math.floor(Math.random() * 6) + 1;
+  const image = document.getElementById("dice-image");
+  image.src = `static/dice${randomNumber}.png`;
+  image.setAttribute("active", "");
+};

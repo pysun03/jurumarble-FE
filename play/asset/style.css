@@ -10,10 +10,6 @@ body {
   font-family: "NanumBarunpen";
 }
 
-html {
-  position: relative;
-}
-
 .setting {
   position: absolute;
   top: 15px;
@@ -288,13 +284,16 @@ button:hover {
 }
 
 .dice-image {
-  display: ; /* 기본적으로 이미지 숨김 */
+  display: none;
+  position: fixed;
   width: 200px;
   height: 200px;
-  object-fit: contain;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: calc(50vw - 100px);
+  top: calc(50vh - 100px);
+  margin: auto;
   border-radius: 15px;
+}
+
+.dice-image[active] {
+  display: flex;
 }
