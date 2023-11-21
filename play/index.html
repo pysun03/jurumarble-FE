@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/style.css" />
     <link rel="stylesheet" href="/global/common.css" />
     <script src="asset/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="left">
-        <div class="players">
-            <div class="logo">
-                <img src="static/cap1.png"/>
-            </div>
-            <div class="player">
-                player1<img src="static/island.png"/>n턴 남음! </div>
+      <div class="players">
+        <div class="logo">
+          <img src="static/cap1.png" />
         </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player">player2</div>
+        <div class="player">
+          player1<img src="static/island.png" />n턴 남음!
         </div>
-        <div class="players">
-            <div class="logo"></div>
-            <div class="player">player3</div>
-        </div>
+      </div>
+      <div class="players">
+        <div class="logo"></div>
+        <div class="player">player2</div>
+      </div>
+      <div class="players">
+        <div class="logo"></div>
+        <div class="player">player3</div>
+      </div>
     </div>
     <div class="map">
-        <img src="static/islandevent.png"  class="corner"/>
-        <img src="static/oneshot.png"  class="corner" />
-        <img src="static/add.png"  class="corner"/>
-        <img src="static/start.png"  class="corner"/>
-        <section class="counter"><img src="static/glass.svg"><span id="drink-counter">0잔 축적됨!</span></section>
-        <div class="cells"></div>
-        <button class="roll" id="rolldice">
-            <img src="static/dice.png"/><span>주사위 굴리기</span></button>
-        </div>
+      <img src="static/islandevent.png" class="corner" />
+      <img src="static/oneshot.png" class="corner" />
+      <img src="static/add.png" class="corner" />
+      <img src="static/start.png" class="corner" />
+      <section class="counter">
+        <img src="static/glass.svg" /><span id="drink-counter"
+          >0잔 축적됨!</span
+        >
+      </section>
+      <div class="cells"></div>
+      <button class="roll" id="rolldice">
+        <img src="static/dice.png" /><span>주사위 굴리기</span>
+      </button>
     </div>
     <div class="right">
-        <div class = "explain">
-            <!-- 황금열쇠나 칸 설명 띄우는 공간-->
-        </div>
+      <div class="explain">
+        <!-- 황금열쇠나 칸 설명 띄우는 공간-->
+      </div>
     </div>
     <button class="setting">
-        <img src="static/setting.png"/>
+      <img src="static/setting.png" />
     </button>
-    </div>
     <div id="myModal" class="modal">
+      <div>
         <div class="modal-content">
-            <img id="modalImage" src="./static/goldkeyback.png" alt="Center Image">
+          <img
+            id="modalImage"
+            src="./static/goldkeyback.png"
+            alt="Center Image"
+          />
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
