@@ -74,6 +74,7 @@ button:hover {
   flex-direction: column;
   padding: 25px 20px;
   font-size: 15px;
+  position: relative;
 }
 
 .counter {
@@ -201,4 +202,43 @@ button:hover {
 
 .corner:is(:nth-child(2), :nth-child(4)) {
   right: 0;
+}
+
+
+
+.explain {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.explain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.overlaytext1, .overlaytext2, .overlaytext3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.overlaytext1 {
+  top: 40%;
+}
+
+.overlaytext2 {
+  top: 55%;
+}
+
+.overlaytext3 {
+  top: 70%;
 }
